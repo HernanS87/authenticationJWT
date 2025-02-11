@@ -1,6 +1,6 @@
 package com.example.authenticationJWT.service;
 
-import com.example.authenticationJWT.mapper.UserSecMapper;
+import com.example.authenticationJWT.service.mapper.UserSecMapper;
 import com.example.authenticationJWT.repository.UserSecRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

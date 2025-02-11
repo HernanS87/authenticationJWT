@@ -1,6 +1,6 @@
 package com.example.authenticationJWT.service;
 
-import com.example.authenticationJWT.dto.UserSecDto;
+import com.example.authenticationJWT.model.dto.UserSecDto;
 import com.example.authenticationJWT.model.UserSec;
 
 import java.util.List;

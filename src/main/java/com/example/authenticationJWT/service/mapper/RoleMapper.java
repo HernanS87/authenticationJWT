@@ -1,6 +1,6 @@
-package com.example.authenticationJWT.mapper;
+package com.example.authenticationJWT.service.mapper;
 
-import com.example.authenticationJWT.dto.RoleDto;
+import com.example.authenticationJWT.model.dto.RoleDto;
 import com.example.authenticationJWT.model.Permission;
 import com.example.authenticationJWT.model.Role;
 import org.mapstruct.Mapper;

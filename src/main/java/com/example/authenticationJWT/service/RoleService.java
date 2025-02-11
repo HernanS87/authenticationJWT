@@ -1,6 +1,6 @@
 package com.example.authenticationJWT.service;
 
-import com.example.authenticationJWT.dto.RoleDto;
+import com.example.authenticationJWT.model.dto.RoleDto;
 import com.example.authenticationJWT.model.Role;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.example.authenticationJWT.service;
 
-import com.example.authenticationJWT.dto.UserSecDto;
-import com.example.authenticationJWT.mapper.UserSecMapper;
+import com.example.authenticationJWT.model.dto.UserSecDto;
+import com.example.authenticationJWT.service.mapper.UserSecMapper;
 import com.example.authenticationJWT.model.Role;
 import com.example.authenticationJWT.model.UserSec;
 import com.example.authenticationJWT.repository.UserSecRepository;

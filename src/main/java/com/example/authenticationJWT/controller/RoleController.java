@@ -1,6 +1,6 @@
 package com.example.authenticationJWT.controller;
 
-import com.example.authenticationJWT.dto.RoleDto;
+import com.example.authenticationJWT.model.dto.RoleDto;
 import com.example.authenticationJWT.model.Role;
 import com.example.authenticationJWT.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;

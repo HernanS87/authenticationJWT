@@ -1,4 +1,4 @@
-package com.example.authenticationJWT.dto;
+package com.example.authenticationJWT.model.dto;
 
 import lombok.Data;
 

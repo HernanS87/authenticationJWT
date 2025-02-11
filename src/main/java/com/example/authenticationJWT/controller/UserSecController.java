@@ -1,6 +1,6 @@
 package com.example.authenticationJWT.controller;
 
-import com.example.authenticationJWT.dto.UserSecDto;
+import com.example.authenticationJWT.model.dto.UserSecDto;
 import com.example.authenticationJWT.model.UserSec;
 import com.example.authenticationJWT.service.UserSecService;
 import org.springframework.beans.factory.annotation.Autowired;
