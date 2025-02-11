@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 @Service
 public class JwtUtils {
 
+    //TODO cambiar las propiedades a final
     @Value("${security.jwt.private.key}")
     private String privateKey;
 
@@ -37,7 +38,7 @@ public class JwtUtils {
                 .collect(Collectors.joining(","));
 
         return JWT.create()
-                .withIssuer(this.userGenerator) //acá va el usuario que genera el token
+                .withIssuer(userGenerator) //acá va el usuario que genera el token
                 .withSubject(username) // usuario autenticado a quien se le genera el token
                 .withClaim("authorities", authorities) //claims son los datos contraidos en el JWT
                 .withIssuedAt(new Date()) //fecha de generación del token
