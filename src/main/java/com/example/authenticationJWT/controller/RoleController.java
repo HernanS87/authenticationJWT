@@ -3,6 +3,7 @@ package com.example.authenticationJWT.controller;
 import com.example.authenticationJWT.model.dto.RoleDto;
 import com.example.authenticationJWT.model.Role;
 import com.example.authenticationJWT.service.RoleService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/roles")
+@Tag(name = "Role")
 public class RoleController {
 
     @Autowired

@@ -3,6 +3,7 @@ package com.example.authenticationJWT.controller;
 import com.example.authenticationJWT.model.dto.UserSecDto;
 import com.example.authenticationJWT.model.UserSec;
 import com.example.authenticationJWT.service.UserSecService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/users")
+@Tag(name = "User")
 public class UserSecController {
 
     @Autowired

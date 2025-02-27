@@ -2,6 +2,7 @@ package com.example.authenticationJWT.controller;
 
 import com.example.authenticationJWT.model.Permission;
 import com.example.authenticationJWT.service.PermissionService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/permissions")
+@Tag(name = "Permission")
 public class PermissionController {
 
     @Autowired
