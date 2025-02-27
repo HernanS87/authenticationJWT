@@ -29,9 +29,9 @@ public class UserSecController {
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/{name}")
-    public ResponseEntity<UserSec> getUserByName(@PathVariable String name) {
-        Optional<UserSec> user = userSecService.findUserSecByUsername(name);
+    @GetMapping("/username/{value}")
+    public ResponseEntity<UserSec> getUserByName(@PathVariable String value) {
+        Optional<UserSec> user = userSecService.findUserSecByUsername(value);
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 

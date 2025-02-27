@@ -29,9 +29,9 @@ public class RoleController {
         return role.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/{name}")
-    public ResponseEntity<Role> getUserByName(@PathVariable String name) {
-        Optional<Role> role = roleService.findRoleByName(name);
+    @GetMapping("/rolname/{value}")
+    public ResponseEntity<Role> getUserByName(@PathVariable String value) {
+        Optional<Role> role = roleService.findRoleByName(value);
         return role.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
