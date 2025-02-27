@@ -27,7 +27,7 @@ public class HelloWorldController {
     @GetMapping("security2")
     @PreAuthorize("hasAuthority('READ')")
     public String helloWidthSec2(@AuthenticationPrincipal User user){
-        log.info("Hola amigo 2: {}", user.getUsername());
+        log.info("Hola amigo 2: {}", user.getUsername()); // este endpoint explota cuando quiero traer la info del usuario
         return "Hello World width SECURITY 2 " + user.getUsername();
     }
 

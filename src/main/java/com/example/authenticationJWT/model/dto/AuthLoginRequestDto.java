@@ -8,5 +8,5 @@ public record AuthLoginRequestDto(@NotBlank String username, @NotBlank String pa
 
 
 /*Cuando una clase se declara como un registro, el compilador de Java genera automáticamente
-ciertos métodos como el constructor, los métodos equals(), hashCode() y toString(),
+ciertos métodos como el constructor, getters, los métodos equals(), hashCode() y toString(),
 basados en los componentes de datos declarados en la clase.*/
