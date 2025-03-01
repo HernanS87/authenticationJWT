@@ -15,7 +15,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/auth")
-@Tag(name = "Auth")
+@Tag(name = "Authentication", description = "Controller for Authentication")
 public class AuthenticationController {
 
     @Autowired
